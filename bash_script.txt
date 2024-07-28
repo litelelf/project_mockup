@@ -1,0 +1,38 @@
+git init
+git remote add origin git@github.com:litelelf/project_mockup.git
+git remote -v
+touch bash_script.txt
+git add .
+git status
+git commit -m "bash-команды"
+touch readme.md
+git add readme.md
+git commit -m "файл с описанием репозитория"
+mkdir source
+git add source
+git commit -m "файлы с расширением .csv или .xlsx"
+git status
+mkdir queries
+git add queries
+touch my.db
+git add my.db
+git commit -m "локальный файл БД DuckDB"
+touch ddl.py
+git add ddl.py
+git commit -m "создание таблиц и заполнение их данными"
+touch connector.py
+git add connector.py
+git commit -m "модуль отвечающий за создание подключения к БД"
+touch etl.py
+git add etl.py
+git commit -m "получение данных из БД"
+touch dashboard.py
+git add dashboard.py
+git commit -m "создание дашборда"
+touch requirements.txt
+git add requirements.txt
+git commit -m "список используемых библиотек и их версий"
+git status
+git push -u origin main
+
+
